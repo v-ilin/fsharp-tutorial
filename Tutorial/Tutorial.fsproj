@@ -57,12 +57,19 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Compile Include="DomainTypes.fs" />
-    <Compile Include="Test.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="TennisInviteRepository.fs" />
+    <Compile Include="TennisInviteAggregate.fs" />
+    <Compile Include="StudyParseJson.fs" />
     <Compile Include="Program.fs" />
+    <None Include="Script2.fsx" />
+    <None Include="Script1.fsx" />
+    <None Include="Script3.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Data">
-      <HintPath>..\..\..\..\..\..\..\Users\xrigi\documents\visual studio 2017\Projects\Tutorial\packages\FSharp.Data.2.3.3\lib\net40\FSharp.Data.dll</HintPath>
+      <HintPath>..\packages\FSharp.Data.2.3.3\lib\net40\FSharp.Data.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core">
@@ -75,7 +82,8 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ValueTuple">
-      <HintPath>..\..\..\..\..\..\..\Users\xrigi\documents\visual studio 2017\Projects\Tutorial\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <HintPath>..\packages\System.ValueTuple.4.3.1\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
