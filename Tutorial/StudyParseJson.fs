@@ -42,4 +42,4 @@
         | _   -> printfn "Unsupported status code was returned!"
 
     with
-        | _ as ex -> printfn "Sending request failed with message: \"%s\"" ex.Message
+        | ex -> printfn "Sending request failed with message: \"%s\"" ex.Message
